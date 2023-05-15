@@ -7,12 +7,12 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0 ,auto;
     box-sizing: border-box;
-    outline:2px solid red;
+    /* outline:2px solid red; */
 }
 
 html{
-    --color-primary:#1000CB;
-    --color-secondary:#FFE4E0;
+    --color-primary:#2e2e2e;
+    --color-secondary:#dedede;
     --color-tertiary:#FF0000;
     --color-text: #484747;
     --color-saletext:#ffffff;
