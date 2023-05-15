@@ -1,5 +1,5 @@
 import React from "react";
-import MainHeader from "../style/Index";
+import MainHeader from "../style/MainHeader";
 import { NavLink } from "react-router-dom";
 import logo from "../images/logo.png";
 import Button from "../style/Button";
