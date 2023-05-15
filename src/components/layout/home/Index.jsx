@@ -1,5 +1,5 @@
 import React from "react";
-import Group from "../../images/group.jpg";
+import Group from "../../../images/group.jpg";
 
 const Index = () => {
   return (
