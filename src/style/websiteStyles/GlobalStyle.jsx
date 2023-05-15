@@ -5,9 +5,10 @@ const GlobalStyle = createGlobalStyle`
 *{
     margin: 0;
     padding: 0;
+    margin: 0 ,auto;
     box-sizing: border-box;
-    overflow-x: hidden;
-    
+   
+     outline:2px solid red;     
 }
 
 html{
@@ -18,7 +19,7 @@ html{
     --color-saletext:#ffffff;
     --color-border:#FFE4E0;
     --html-bgcolor :#FAFAFA;
-    height: 100%;
+   
 }
 
 body{

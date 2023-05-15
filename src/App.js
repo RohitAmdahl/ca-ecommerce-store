@@ -1,19 +1,22 @@
 import React from "react";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import Contact from "./pages/Contact";
+import Cart from "./pages/Cart";
+import Header from "./components/Header";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <div>
-      App
-      <h1>App</h1>
-      <h2>hello</h2>
-      <h3>Hello</h3>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-        voluptates placeat nemo in sit quibusdam sequi autem veniam sed
-        voluptatum ex, iste doloribus eaque ab quis fugiat laborum distinctio
-        pariatur?
-      </p>
-    </div>
+    <>
+      <Header />
+      <Routes>
+        <Route index path="/" element={<Home />} />
+        <Route index path="/products" element={<Products />} />
+        <Route index path="/contact" element={<Contact />} />
+        <Route index path="/cart" element={<Cart />} />
+      </Routes>
+    </>
   );
 };
 
