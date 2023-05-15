@@ -3,13 +3,13 @@ import { ThemeProvider } from "styled-components";
 
 const theme = {
   color: {
-    buttonborder: "#FFE4E0",
+    buttonborder: "var(--color-border)",
     text: "var(--color-text)",
     htmlbgcolor: "var(--html-bgcolor)",
     primary: "var(--color-primary)",
     secondary: "var(--color-secondary)",
-    tertiary: "#FF0000",
-    saleText: "#ffffff",
+    tertiary: "var(--color-tertiary)",
+    saleText: "var(--color-saletext)",
     media: { mobile: "420px", tab: "998px", laptop: "1200" },
   },
 };
