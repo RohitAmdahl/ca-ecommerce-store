@@ -18,8 +18,3 @@ body{
 
 `;
 export default GlobalStyle;
-// buttonBorder: "#FFE4E0",
-
-// htmlBGcolor: "#FAFAFA",
-// tertiary: "#FF0000",
-// saleText: "#ffffff",
