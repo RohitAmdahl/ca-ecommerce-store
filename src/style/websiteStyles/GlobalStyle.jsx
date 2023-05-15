@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    font-size: 52.5% 
+    
 }
 
 html{
@@ -23,6 +23,7 @@ html{
 
 body{
     background:${(props) => props.theme.color.htmlbgcolor};
+    color:${(props) => props.theme.color.text};
      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -31,18 +32,17 @@ body{
   
 }
 h1{
-    color:${(props) => props.theme.color.text};
-    font-size:4rem;
-    font-weight:700;
-}
-
-h2{  
     font-size:3rem;
     font-weight:700;
 }
 
+h2{  
+    font-size:2rem;
+    font-weight:700;
+}
+
 h3{
-     font-size:2.5rem;
+     font-size:1.5rem;
     font-weight:700;
 }
 
