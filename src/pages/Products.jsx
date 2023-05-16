@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 // import ProductComp from "../components/layout/product/Index";
 const url = `https://api.noroff.dev/api/v1/online-shop/`;
+console.log(url);
 const Products = () => {
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -12,14 +13,13 @@ const Products = () => {
         isError(false);
         setIsLoading(true);
 
-        const res = await fetch(url);
-        console.log(res);
-        const json = await res.json();
-        console.log(json);
+        const response = await fetch(url);
+        console.log(response);
+        const data = await response.json();
 
-        setItems(json);
+        console.log(data);
+        setItems(data);
         //
-
         setIsLoading(false);
         //
       } catch (error) {
