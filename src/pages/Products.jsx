@@ -11,7 +11,7 @@ const Products = () => {
   useEffect(() => {
     async function getData() {
       try {
-        isError(false);
+        setIsError(false);
         setIsLoading(true);
 
         const response = await fetch(url);
@@ -25,7 +25,7 @@ const Products = () => {
         //
       } catch (error) {
         setIsLoading(false);
-        setIsError(true);
+        setIsError(false);
       }
     }
     getData();
@@ -41,9 +41,7 @@ const Products = () => {
     <>
       <div>
         {items.map((cards) => (
-          <div>
-            <Index key={cards.id} cards={cards} />
-          </div>
+          <Index key={cards.id} cards={cards} />
         ))}
       </div>
     </>

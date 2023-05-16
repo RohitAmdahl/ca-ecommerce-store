@@ -4,7 +4,7 @@ const Index = ({ cards }) => {
   return (
     <>
       <div>
-        <h2>{cards.title}</h2>
+        <p>{cards.title}</p>
       </div>
     </>
   );
