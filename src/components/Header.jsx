@@ -15,10 +15,9 @@ const Header = () => {
         </div>
       </NavLink>
       <div className="form-div">
-        <form onSubmit="" className="form">
+        <form className="form">
           <div className="search-bar">
             <input
-              onChange=""
               className="search-input"
               type="text"
               placeholder="Search..."
