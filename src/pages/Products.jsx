@@ -45,12 +45,6 @@ const Products = () => {
   }
   return (
     <>
-      {/* <div>
-        {items.map((cards) => (
-          <Index key={cards.id} cards={cards} />
-        ))}
-      </div> */}
-      {/*  */}
       <SearchBar searchText={(text) => setSearchTerm(text)} />
       {items?.length > 0 ? (
         <div className="">
@@ -63,7 +57,6 @@ const Products = () => {
           No items found
         </div>
       )}
-      {/*  */}
     </>
   );
 };
