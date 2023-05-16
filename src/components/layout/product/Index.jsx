@@ -10,11 +10,13 @@ const Index = () => {
           <p className="hero-hedding">
             For members : free shipping over 300nok any location in Norway.
           </p>
-          <img
-            src={Group}
-            alt="group of model presenting the ecommerce website"
-            className="hero-img"
-          />
+          <div>
+            <img
+              className="hero-img"
+              src={Group}
+              alt="group of model presenting the ecommerce website"
+            />
+          </div>
         </div>
       </Wrapper>
     </>
