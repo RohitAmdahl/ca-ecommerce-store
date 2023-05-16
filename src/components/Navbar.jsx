@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Nav from "../style/Nav";
+import { BsHandbag } from "react-icons/bs";
 
 const Navbar = () => {
   return (
@@ -25,6 +26,12 @@ const Navbar = () => {
           <li>
             <NavLink className="navbar-links" to="/contact">
               Contact
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="navbar-links" to="/cart">
+              <BsHandbag />
+              <span>0</span>
             </NavLink>
           </li>
         </ul>

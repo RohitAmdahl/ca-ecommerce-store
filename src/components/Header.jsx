@@ -1,36 +1,21 @@
 import React from "react";
 import MainHeader from "../style/MainHeader";
-import { NavLink } from "react-router-dom";
-import logo from "../images/logo.png";
-import Button from "../style/Button";
+// import { NavLink } from "react-router-dom";
+// import logo from "../images/logo.png";
+import SearchBar from "./SearchBar";
 import Navbar from "./Navbar";
 import { BsHandbag } from "react-icons/bs";
+import AppLogo from "./AppLogo";
 
 const Header = () => {
+  // const [text, setText] = useState("");
+  // const onSubmit = (e) => {
+  //   e.preventDefault();
+  //   searchText(text);
+  // };
   return (
     <MainHeader>
-      <NavLink to="/">
-        <div className="logo-div">
-          <img src={logo} alt="website logo" className="logo" />
-        </div>
-      </NavLink>
-      <div className="form-div">
-        <form className="form">
-          <div className="search-bar">
-            <input
-              className="search-input"
-              type="text"
-              placeholder="Search..."
-            />
-            <Button type="submit">Search</Button>
-            {/* <button className=""></button> */}
-          </div>
-        </form>
-        <div className="form-div">
-          <BsHandbag />
-          <span>0</span>
-        </div>
-      </div>
+      <AppLogo />
       <Navbar />
     </MainHeader>
   );
