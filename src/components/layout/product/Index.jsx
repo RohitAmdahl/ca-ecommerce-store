@@ -1,24 +1,11 @@
 import React from "react";
-import Group from "../../../images/group.jpg";
-import Wrapper from "../../../style/Wrapper";
 
-const Index = () => {
+const Index = ({ cards }) => {
   return (
     <>
-      <Wrapper>
-        <div className="hero-section">
-          <p className="hero-hedding">
-            For members : free shipping over 300nok any location in Norway.
-          </p>
-          <div>
-            <img
-              className="hero-img"
-              src={Group}
-              alt="group of model presenting the ecommerce website"
-            />
-          </div>
-        </div>
-      </Wrapper>
+      <div>
+        <h2>{cards.title}</h2>
+      </div>
     </>
   );
 };

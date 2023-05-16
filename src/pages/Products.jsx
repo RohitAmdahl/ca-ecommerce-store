@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Index from "../components/layout/product/Index";
 
 // import ProductComp from "../components/layout/product/Index";
 const url = `https://api.noroff.dev/api/v1/online-shop/`;
@@ -39,9 +40,9 @@ const Products = () => {
   return (
     <>
       <div>
-        {items.map((post) => (
+        {items.map((cards) => (
           <div>
-            <h2>{post.title}</h2>
+            <Index key={cards.id} cards={cards} />
           </div>
         ))}
       </div>
