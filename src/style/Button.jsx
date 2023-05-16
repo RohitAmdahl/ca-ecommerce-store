@@ -12,9 +12,7 @@ const Button = styled.button`
   font-weight: 700;
   cursor: pointer;
   &:hover {
-    background-color: ${(props) => props.theme.color.primary};
     color: ${(props) => props.theme.color.secondary};
-    outline: none;
   }
 `;
 

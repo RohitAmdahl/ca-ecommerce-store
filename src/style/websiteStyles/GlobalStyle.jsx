@@ -11,8 +11,8 @@ const GlobalStyle = createGlobalStyle`
 }
 
 html{
-    --color-primary:#2e2e2e;
-    --color-secondary:#dedede;
+    --color-primary:#4c4c4c;
+    --color-secondary:#fdfdfd;
     --color-tertiary:#FF0000;
     --color-text: #484747;
     --color-saletext:#ffffff;

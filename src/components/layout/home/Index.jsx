@@ -1,6 +1,8 @@
 import React from "react";
 import Group from "../../../images/group.jpg";
 import Wrapper from "../../../style/Wrapper";
+import Button from "../../../style/Button";
+import { NavLink } from "react-router-dom";
 const Index = () => {
   return (
     <>
@@ -14,6 +16,11 @@ const Index = () => {
             src={Group}
             alt="group of model presenting the ecommerce website"
           />
+        </div>
+        <div className="btn">
+          <Button className=" shop-btn ">
+            <NavLink to="/product">shop now </NavLink>
+          </Button>
         </div>
       </Wrapper>
     </>

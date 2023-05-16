@@ -16,7 +16,7 @@ const Products = () => {
         setIsError(false);
         setIsLoading(true);
 
-        const response = await fetch(url);
+        const response = await fetch(`${url}`);
         console.log(response);
         const data = await response.json();
 

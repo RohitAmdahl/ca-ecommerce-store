@@ -15,7 +15,18 @@ const Wrapper = styled.section`
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
-    padding: 10px;
+    padding: 10px 1rem;
+  }
+  .btn {
+    margin: 1.3rem;
+  }
+  .shop-btn {
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
