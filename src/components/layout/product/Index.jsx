@@ -10,11 +10,13 @@ const Index = ({ cards }) => {
         <div className="cards">
           <img src={cards.imageUrl} alt="" className="card-img" />
           <div className="card-body">
-            <p>{cards.title}</p>
-            <div>
+            <p className="title">{cards.title}</p>
+            <div className="price">
               <p>{cards.price} kr-</p>
+              <p>{cards.discountedPrice} kr-</p>
             </div>
-            <div>
+
+            <div className="btn">
               <Button>
                 <NavLink to="/">Veiw Product</NavLink>
               </Button>
