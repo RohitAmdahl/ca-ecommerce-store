@@ -9,14 +9,14 @@ import Layout from "./layout/Index";
 const App = () => {
   return (
     <>
-      <Layout>
-        <Routes>
-          <Route index path="/" element={<Home />} />
-          <Route index path="/products" element={<Products />} />
-          <Route index path="/contact" element={<Contact />} />
-          <Route index path="/cart" element={<Cart />} />
-        </Routes>
-      </Layout>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/product" element={<Products />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/cart" element={<Cart />} />
+        </Route>
+      </Routes>
     </>
   );
 };

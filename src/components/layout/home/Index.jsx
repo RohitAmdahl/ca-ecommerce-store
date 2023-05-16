@@ -1,18 +1,15 @@
 import React from "react";
 import Group from "../../../images/group.jpg";
-
+import Wrapper from "../../../style/Wrapper";
 const Index = () => {
   return (
     <>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
-          autem dignissimos, repellendus nihil fugit iure eaque culpa? Neque
-          quidem incidunt repellendus sit, dolores doloribus, aliquid saepe
-          commodi itaque nesciunt doloremque.
-        </p>
-        <img src={Group} alt="img " />
-      </div>
+      <Wrapper>
+        <div className="hero-section">
+          <p>For members : free shipping over 300nok any location in Norway.</p>
+          <img src={Group} alt="img" />
+        </div>
+      </Wrapper>
     </>
   );
 };
