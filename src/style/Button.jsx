@@ -4,7 +4,7 @@ const Button = styled.button`
   text-decoration: none;
   background-color: ${(props) => props.theme.color.saleText};
   color: ${(props) => props.theme.color.primary};
-  outline: 3px solid #ffe4e0;
+  outline: 3px solid ${(props) => props.theme.color.buttonborder};
   margin: 0.5rem;
   padding: 0.5rem 1rem;
   border: none;

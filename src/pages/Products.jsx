@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Index from "../components/layout/product/Index";
 import SearchBar from "../components/SearchBar";
-
+import Herosection from "../style/MainCard";
 // import ProductComp from "../components/layout/product/Index";
 const url = `https://api.noroff.dev/api/v1/online-shop/`;
 console.log(url);
@@ -47,11 +47,11 @@ const Products = () => {
     <>
       <SearchBar searchText={(text) => setSearchTerm(text)} />
       {items?.length > 0 ? (
-        <div className="">
+        <Herosection>
           {items.map((cards) => (
             <Index key={cards.id} cards={cards} />
           ))}
-        </div>
+        </Herosection>
       ) : (
         <div className="mx-auto text-center text-4xl font-bold">
           No items found

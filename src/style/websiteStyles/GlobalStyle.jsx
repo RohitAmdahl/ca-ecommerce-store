@@ -7,7 +7,8 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0 ,auto;
     box-sizing: border-box;
-    /* outline:2px solid red; */
+    overflow-x: hidden;
+     /* outline:2px solid red;  */
 }
 
 html{
