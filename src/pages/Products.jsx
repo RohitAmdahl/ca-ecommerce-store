@@ -35,7 +35,7 @@ const Products = () => {
   if (isLoading) {
     return (
       <div>
-        <h1>Loading posts.....</h1>
+        <h1>Loading products.....</h1>
       </div>
     );
   }
@@ -54,7 +54,7 @@ const Products = () => {
         </Herosection>
       ) : (
         <div className="mx-auto text-center text-4xl font-bold">
-          No items found
+          <h1>No products found according to your search</h1>
         </div>
       )}
     </>
