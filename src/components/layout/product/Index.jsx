@@ -18,7 +18,9 @@ const Index = ({ cards }) => {
 
             <div className="btn">
               <Button>
-                <NavLink to="/">Veiw Product</NavLink>
+                <NavLink to="/" className="link">
+                  Veiw Product
+                </NavLink>
               </Button>
             </div>
           </div>

@@ -10,6 +10,7 @@ const theme = {
     secondary: "var(--color-secondary)",
     tertiary: "var(--color-tertiary)",
     saleText: "var(--color-saletext)",
+    hover: "var(--color-hover)",
     media: { mobile: "420px", tab: "998px", laptop: "1200" },
   },
 };

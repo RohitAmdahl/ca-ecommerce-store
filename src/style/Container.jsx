@@ -6,14 +6,8 @@ const Card = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-right-width: 1px;
-  border-right-style: solid;
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.017),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.06);
 
   .title {
     padding: 0 1rem;

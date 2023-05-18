@@ -12,13 +12,14 @@ const GlobalStyle = createGlobalStyle`
 }
 
 html{
-    --color-primary:#0d74fa;
-    --color-secondary:#2f2e2e;
+    --color-primary:#1000CB;
+    --color-secondary:#FFE4E0;
     --color-tertiary:#FF0000;
     --color-text: #484747;
     --color-saletext:#ffffff;
     --color-border:#FFE4E0;
     --html-bgcolor :#FAFAFA;
+    --color-hover:#301FFD;
    
 }
 
@@ -58,8 +59,9 @@ p{
     font-size:1rem;
     font-weight:400;
 }
-a{
+a, Navlink{
     text-decoration: none;
+      color: ${(props) => props.theme.color.secondary};
 }
 li{
     list-style: none;
