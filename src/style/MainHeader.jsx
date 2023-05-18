@@ -35,12 +35,12 @@ const MainHeader = styled.header`
     border-bottom-style: solid;
     color: ${(props) => props.theme.color.primary};
   }
-  .form-div {
+  /* .form-div {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-  }
+  } */
 `;
 
 export default MainHeader;
