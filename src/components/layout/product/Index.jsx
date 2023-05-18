@@ -3,12 +3,12 @@ import Button from "../../../style/Button";
 import { NavLink } from "react-router-dom";
 import Card from "../../../style/Container";
 
-const Index = ({ cards }) => {
+const products = ({ cards }) => {
   return (
     <>
       <Card>
         <div className="cards">
-          <img src={cards.imageUrl} alt="" className="card-img" />
+          <img src={cards.imageUrl} alt={cards.title} className="card-img" />
           <div className="card-body">
             <p className="title">{cards.title}</p>
             <div className="price">
@@ -30,4 +30,4 @@ const Index = ({ cards }) => {
   );
 };
 
-export default Index;
+export default products;

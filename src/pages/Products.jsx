@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Index from "../components/layout/product/Index";
 import SearchBar from "../components/SearchBar";
 import Herosection from "../style/MainCard";
-// import ProductComp from "../components/layout/product/Index";
+
 const url = `https://api.noroff.dev/api/v1/online-shop/`;
 console.log(url);
 const Products = () => {
