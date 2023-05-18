@@ -32,15 +32,16 @@ const Card = styled.div`
   }
 
   .card-body {
-    display: block;
   }
   .price {
+    padding: 0 1rem;
     display: flex;
     gap: 1rem;
   }
   .btn {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    padding: 0 1rem;
   }
 `;
 export default Card;
