@@ -1,15 +1,16 @@
 import { styled } from "styled-components";
 
 const ContactDiv = styled.section`
-  .heading {
-    text-align: center;
-  }
   .contact {
+    padding: 20px;
+    width: 100%;
     max-width: 960px;
     margin: 0 auto;
-    width: 100%;
     text-align: center;
     padding-top: 10px;
+    .heading {
+      text-align: center;
+    }
   }
   iframe {
     width: 100%;
@@ -38,7 +39,7 @@ const ContactDiv = styled.section`
     margin-top: 0.2rem;
     border-radius: 0.2rem;
     border: none;
-    outline: 1px solid blue;
+    outline: 1px solid ${(props) => props.theme.color.secondary};
   }
 `;
 export default ContactDiv;
