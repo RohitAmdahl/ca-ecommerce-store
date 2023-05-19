@@ -18,7 +18,7 @@ const products = ({ cards }) => {
 
             <div className="btn">
               <Button>
-                <NavLink to="/" className="link">
+                <NavLink to="/detail" className="link">
                   Veiw Product
                 </NavLink>
               </Button>
