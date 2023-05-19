@@ -31,3 +31,5 @@ const products = ({ cards }) => {
 };
 
 export default products;
+
+// .toLocalString()
