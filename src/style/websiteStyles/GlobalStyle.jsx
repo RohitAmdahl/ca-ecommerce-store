@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0 , auto;
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
      /* outline:2px solid red;  */
 }
 
@@ -59,12 +59,13 @@ p{
     font-size:1rem;
     font-weight:400;
 }
-a, Navlink{
+a{
     text-decoration: none;
       color: ${(props) => props.theme.color.secondary};
 }
 li{
     list-style: none;
+    
 }
 
 `;

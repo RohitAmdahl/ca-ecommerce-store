@@ -25,8 +25,6 @@ const Card = styled.div`
     aspect-ratio: 1 / 1;
   }
 
-  .card-body {
-  }
   .price {
     padding: 0 1rem;
     display: flex;
@@ -37,5 +35,10 @@ const Card = styled.div`
     margin-bottom: 1rem;
     padding: 0 1rem;
   }
+  /* @media (max-width: ${(props) => props.theme.color.media.tab}) {
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+    gap: 0.5rem;
+  } */
 `;
 export default Card;

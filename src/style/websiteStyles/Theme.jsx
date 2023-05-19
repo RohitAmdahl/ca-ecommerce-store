@@ -11,7 +11,11 @@ const theme = {
     tertiary: "var(--color-tertiary)",
     saleText: "var(--color-saletext)",
     hover: "var(--color-hover)",
-    media: { mobile: "420px", tab: "998px", laptop: "1200" },
+    media: {
+      mobile: "560px",
+      tab: "800px",
+      laptop: "1200",
+    },
   },
 };
 
