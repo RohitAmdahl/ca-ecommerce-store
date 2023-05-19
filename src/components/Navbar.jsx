@@ -29,9 +29,9 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink className="navbar-links" to="/cart">
+            <NavLink className="navbar-links cart-trolley--link" to="/cart">
               <BsHandbag />
-              <span>0</span>
+              <span className="cart-total--item">10</span>
             </NavLink>
           </li>
         </ul>

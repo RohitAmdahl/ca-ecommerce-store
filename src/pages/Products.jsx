@@ -53,7 +53,7 @@ const Products = () => {
           ))}
         </Herosection>
       ) : (
-        <div className="mx-auto text-center text-4xl font-bold">
+        <div className="">
           <h1>No products found according to your search</h1>
         </div>
       )}
