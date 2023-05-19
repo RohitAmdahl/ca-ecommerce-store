@@ -2,10 +2,14 @@ import { styled } from "styled-components";
 
 const ContactDiv = styled.section`
   .heading {
-    display: flex;
-    justify-content: center;
-    margin: 1rem;
-    align-items: center;
+    text-align: center;
+  }
+  .contact {
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
   }
   iframe {
     width: 100%;
@@ -27,7 +31,7 @@ const ContactDiv = styled.section`
     margin: 0 auto;
   }
   label {
-    font-weight: 800;
+    font-weight: 400;
   }
   input {
     padding: 0.5rem;
