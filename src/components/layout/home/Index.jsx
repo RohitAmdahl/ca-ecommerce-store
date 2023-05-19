@@ -3,6 +3,7 @@ import Group from "../../../images/group.jpg";
 import Wrapper from "../../../style/Wrapper";
 import Button from "../../../style/Button";
 import { NavLink } from "react-router-dom";
+// import Products from "../../../pages/Products";
 const Index = () => {
   return (
     <>
@@ -23,6 +24,7 @@ const Index = () => {
           </Button>
         </div>
       </Wrapper>
+      {/* <Products /> */}
     </>
   );
 };
