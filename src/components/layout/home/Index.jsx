@@ -23,8 +23,9 @@ const Index = () => {
             <NavLink to="/product">shop now </NavLink>
           </Button>
         </div>
+
+        <div>{/* {filterp} */}</div>
       </Wrapper>
-      {/* <Products /> */}
     </>
   );
 };

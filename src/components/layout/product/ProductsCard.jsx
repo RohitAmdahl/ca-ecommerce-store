@@ -3,17 +3,21 @@ import Button from "../../../style/Button";
 import { NavLink } from "react-router-dom";
 import Card from "../../../style/Container";
 // import { useParams } from "react-router-dom";
-const products = ({ cards }) => {
+const productsCards = ({ product }) => {
   return (
     <>
       <Card>
         <div className="cards">
-          <img src={cards.imageUrl} alt={cards.title} className="card-img" />
+          <img
+            src={product.imageUrl}
+            alt={product.title}
+            className="card-img"
+          />
           <div className="card-body">
-            <p className="title">{cards.title}</p>
+            <p className="title">{product.title}</p>
             <div className="price">
-              <p>{cards.price} kr-</p>
-              <p>{cards.discountedPrice} kr-</p>
+              <p>{product.price} kr-</p>
+              <p>{product.discountedPrice} kr-</p>
             </div>
 
             <div className="btn">
@@ -30,6 +34,6 @@ const products = ({ cards }) => {
   );
 };
 
-export default products;
+export default productsCards;
 
 // .toLocalString()
