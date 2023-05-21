@@ -9,7 +9,7 @@ const Detailpage = () => {
   let { id } = useParams();
   console.log(id);
   useEffect(() => {
-    async function getData(url) {
+    async function singleData(url) {
       try {
         setIsLoading(true);
         setIsError(false);
@@ -26,10 +26,14 @@ const Detailpage = () => {
       }
     }
 
-    getData(`https://api.noroff.dev/api/v1/online-shop/${id}`);
+    singleData(`https://api.noroff.dev/api/v1/online-shop/${id}`);
   }, [id]);
   if (isLoading || !data) {
-    return <div>Loading</div>;
+    return (
+      <div>
+        <h1>Loading....</h1>
+      </div>
+    );
   }
 
   if (isError) {
@@ -37,7 +41,14 @@ const Detailpage = () => {
   }
 
   console.log(data);
-  return <div>hello</div>;
+  return (
+    <>
+      <div>
+        <h1>This is a product page for product {id} </h1>
+      </div>
+      ;
+    </>
+  );
 };
 
 export default Detailpage;

@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../../../style/Button";
 import { NavLink } from "react-router-dom";
 import Card from "../../../style/Container";
-
+// import { useParams } from "react-router-dom";
 const products = ({ cards }) => {
   return (
     <>

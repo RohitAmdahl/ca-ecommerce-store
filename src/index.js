@@ -5,16 +5,18 @@ import reportWebVitals from "./reportWebVitals";
 import Theme from "./style/websiteStyles/Theme";
 import GlobalStyle from "./style/websiteStyles/GlobalStyle";
 import { BrowserRouter } from "react-router-dom";
-
+import { AppProvider } from "./context/ProductContext";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Theme>
-        <GlobalStyle />
-        <App />
-      </Theme>
-    </BrowserRouter>
+    <AppProvider>
+      <BrowserRouter>
+        <Theme>
+          <GlobalStyle />
+          <App />
+        </Theme>
+      </BrowserRouter>
+    </AppProvider>
   </React.StrictMode>
 );
 

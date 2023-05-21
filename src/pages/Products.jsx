@@ -7,7 +7,6 @@ const url = `https://api.noroff.dev/api/v1/online-shop/`;
 console.log(url);
 const Products = () => {
   const [items, setItems] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   useEffect(() => {
@@ -29,7 +28,7 @@ const Products = () => {
       }
     }
     getData();
-  }, [searchTerm]);
+  }, []);
   if (isLoading) {
     return (
       <div>
@@ -43,7 +42,7 @@ const Products = () => {
   }
   return (
     <>
-      <SearchBar searchText={(text) => setSearchTerm(text)} />
+      <SearchBar />
       {items?.length > 0 ? (
         <Herosection>
           {items.map((cards) => (
