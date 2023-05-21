@@ -1,8 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-const url = `https://api.noroff.dev/api/v1/online-shop/`;
-// console.log(url);
+
 const Detailpage = () => {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -10,7 +9,7 @@ const Detailpage = () => {
   let { id } = useParams();
   console.log(id);
   useEffect(() => {
-    async function getData() {
+    async function getData(url) {
       try {
         setIsLoading(true);
         setIsError(false);
@@ -27,7 +26,7 @@ const Detailpage = () => {
       }
     }
 
-    getData(url + id);
+    getData(`https://api.noroff.dev/api/v1/online-shop/${id}`);
   }, [id]);
   if (isLoading || !data) {
     return <div>Loading</div>;
