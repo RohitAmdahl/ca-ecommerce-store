@@ -6,11 +6,7 @@ import ProductsCards from "../components/layout/product/ProductsCard";
 
 const Home = () => {
   const { products } = useContext(ProductContext);
-  // console.log(products);
-  const filterProducts = products.filter((items) => {
-    return items.tags[0] === "electronics" || items.tags[0] === "shoes";
-  });
-  console.log(filterProducts);
+  console.log(products);
   return (
     <>
       {/* <Herosection>
@@ -21,9 +17,9 @@ const Home = () => {
       <div>
         <Index />
       </div>
-      {filterProducts?.length > 0 ? (
+      {products?.length > 0 ? (
         <Herosection>
-          {filterProducts.map((product) => {
+          {products.map((product) => {
             return <ProductsCards key={product.id} product={product} />;
           })}
         </Herosection>
