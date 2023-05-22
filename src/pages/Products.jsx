@@ -4,7 +4,7 @@ import ProductsCards from "../components/layout/product/ProductsCard";
 import Herosection from "../style/MainCard";
 const Products = () => {
   const { products } = useContext(ProductContext);
-  console.log(products);
+
   return (
     <>
       <Herosection>

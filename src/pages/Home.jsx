@@ -6,7 +6,7 @@ import ProductsCards from "../components/layout/product/ProductsCard";
 
 const Home = () => {
   const { products } = useContext(ProductContext);
-  console.log(products);
+
   return (
     <>
       {/* <Herosection>

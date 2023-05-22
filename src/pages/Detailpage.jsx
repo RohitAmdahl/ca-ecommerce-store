@@ -1,13 +1,27 @@
 import React from "react";
-
+import { ProductContext } from "../context/ProductContext";
+import { useParams } from "react-router-dom";
+import { useContext } from "react";
 const Detailpage = () => {
-  return <div>Detailpage</div>;
-};
+  // get the product id from the url
+  const { id } = useParams();
+  const { products } = useContext(ProductContext);
+  // const { addToCart } = useContext(ProductContext);
 
+  //get singel product based on id
+  const product = products.find((item) => {
+    return item.id === id;
+  });
+  console.log(product);
+  // destructure the products
+  const { title, description, imageUrl, price, rating } = product;
+  return (
+    <div>
+      <h1>{title}</h1>
+    </div>
+  );
+};
 export default Detailpage;
-// import React from "react";
-// import { useParams } from "react-router-dom";
-// import { useState, useEffect } from "react";
 // const Detailpage = () => {
 //   const [data, setData] = useState(null);
 //   const [isLoading, setIsLoading] = useState(false);
@@ -50,7 +64,7 @@ export default Detailpage;
 //   return (
 //     <>
 //       <div>
-//         <h1>This is a product page for product {id} </h1>
+//         <h1> {data.title} </h1>
 //       </div>
 //       ;
 //     </>

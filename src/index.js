@@ -6,17 +6,20 @@ import Theme from "./style/websiteStyles/Theme";
 import GlobalStyle from "./style/websiteStyles/GlobalStyle";
 import { BrowserRouter } from "react-router-dom";
 import ProductProvider from "./context/ProductContext";
+import CartProvider from "./context/CartContext";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ProductProvider>
-      <BrowserRouter>
-        <Theme>
-          <GlobalStyle />
-          <App />
-        </Theme>
-      </BrowserRouter>
-    </ProductProvider>
+    <CartProvider>
+      <ProductProvider>
+        <BrowserRouter>
+          <Theme>
+            <GlobalStyle />
+            <App />
+          </Theme>
+        </BrowserRouter>
+      </ProductProvider>
+    </CartProvider>
   </React.StrictMode>
 );
 
